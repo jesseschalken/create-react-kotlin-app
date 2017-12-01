@@ -13,10 +13,10 @@ collectors:
         bootstrap_command: yarn
         github_labels:
         - dependencies
-  # separate PRs for major updates
-  - type: js-lerna
-    versions: "Y.0.0"
-    settings:
-      bootstrap_command: yarn
-      github_labels:
-      - dependencies
+    # separate PRs for major updates
+    - type: js-lerna
+      versions: "Y.0.0"
+      settings:
+        bootstrap_command: yarn
+        github_labels:
+        - dependencies
