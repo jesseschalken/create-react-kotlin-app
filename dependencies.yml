@@ -1,10 +1,9 @@
 collectors:
-
 - type: js-lerna
   path: /
   settings:
-      collect_root: true
-      bootstrap_command: yarn
+    collect_root: true
+    bootstrap_command: yarn
   actors:
   # batch PR for minor and patch updates
     - type: js-lerna
@@ -16,8 +15,8 @@ collectors:
         - dependencies
   # separate PRs for major updates
   - type: js-lerna
-      versions: "Y.0.0"
-      settings:
-        bootstrap_command: yarn
-        github_labels:
-        - dependencies
+    versions: "Y.0.0"
+    settings:
+      bootstrap_command: yarn
+      github_labels:
+      - dependencies
